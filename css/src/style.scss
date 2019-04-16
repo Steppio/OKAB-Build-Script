@@ -2,13 +2,16 @@
 @import "../susy/sass/susy";
 @import "../typi/scss/typi";
 
-$small: 0px;
-$small-tablet: 0px 767px;
-$small-desktop: 0px 1023px;
+// responsive ranges
+$mobile: 0px;
+$mobile-tablet: 0px 767px;
+$mobile-desktop: 0px 1023px;
 $tablet: 768px;
-$tablet-desktop: 768px 1023px;
+$tablet-desktop: 750px 1023px;
 $desktop: 1024px;
-$big: 1200px;
+$medium-desktop: 1280px;
+$large-desktop: 1400px;
+
 
 @import "layout";
 @import "type";
