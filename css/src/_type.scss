@@ -1,0 +1,81 @@
+
+	html {
+		font-size: 14pt !important;
+	}
+
+	$breakpoints: (
+	  small: 1px,
+	  medium: 750px,
+	  large: 1024px,
+	);
+
+	$typi: (
+	  null: (16px, 1.4),
+	  small: 26px,
+	  medium: 26px,
+	  large: 26px
+	);
+
+	$h1-map: (
+	  null: (1em, 1.6),
+	  small: (1.5em, 1.4),
+	  medium: (1.4em, 1.6),
+	  large: (2.5em, 1.4)
+	  );
+
+	$h2-map: (
+	  null: (1.5em, 1.4),
+	  small: (1.5em, 1.4),
+	  medium: (1.6em, 1.4),
+	  large: (1.7em, 1.4)
+	  );
+
+	$h3-map: (
+	  null: (0.7em, 1.4),
+	  small: (1.1em, 1.4),
+	  medium: (1.3em, 1.4),
+	  large: (1.5em, 1.4)
+	  );
+
+	$h4-map: (
+	  null: (0.6em, 1.4),
+	  small: (0.6em, 1.4),
+	  medium: (0.6em, 1.4),
+	  large: (0.6em, 1.4)
+	  );
+
+	$p-map: (
+	  null: (1em, 1.4),
+	  small: (1em, 1.7),
+	  medium: (1em, 1.4),
+	  large: (1.2em, 1.8)
+	  );
+
+	html h1 { @include typi($h1-map); }
+	html h2 { @include typi($h2-map); }
+	html h3 { @include typi($h3-map); font-weight: 500 !important; }
+	html h4 { @include typi($h4-map); }
+	html p { @include typi($p-map); font-weight: 100; }
+	html a { @include typi($p-map); text-decoration: none; }
+
+	html {
+		@include typi-base();
+	}
+
+	h1,h2,h3,h4,h5,p,a {
+		color: white !important;
+		hyphens: none !important;
+	}
+	h1,h2,h3,h4,h5 {
+		font-weight: 600;
+	}
+
+	.wpcf7-checkbox .wpcf7-list-item, .acceptance-447 .wpcf7-list-item {
+		span.wpcf7-list-item-label {
+			font-size: 0.7em;
+		}
+		a {
+			font-size: 1em;
+		}
+		margin-left: 0px;
+	}	
